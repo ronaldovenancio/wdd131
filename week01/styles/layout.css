@@ -1,0 +1,102 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template: auto 1fr auto / 200px 1fr 1fr 1fr auto;
+}
+
+header {
+  background: rgb(0 0 0 / 0.6);
+  padding: 1rem;
+  grid-column: 1 / 5;
+  color: white;
+  text-align: left;
+}
+
+/*.left-sidebar {
+  background: lightblue;
+  grid-column: 1 / 2;
+} */
+
+main {
+  background: lightgray;
+  grid-column: 1 / 4;
+  padding: 2rem;
+}
+
+.right-sidebar {
+  background: white;
+  grid-column: 4 / 5;
+}
+
+footer {
+  background: rgb(0 0 0 / 0.8);
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 5;
+  color: white;
+}
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: acme, Arial, sans-serif;
+}
+
+/*
+h1 {
+	text-align: center;
+	background-color: rgb(0 110 182 / 1);
+	padding: 0.5rem;
+	color: #fff;
+} */
+
+p {
+	text-align: center;
+}
+
+nav {
+	margin: 0 auto 2rem;
+  padding: 1rem;
+	max-width: 90vw;
+}
+
+/*
+main {
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 / .2);
+	padding: 1rem;
+	background-color: #eee;
+} */
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #333;
+	align-items: center;
+}
+.navigation li {
+	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+.navigation a {
+  background: rgb(0 0 0 / 0.8);
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 800;
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
