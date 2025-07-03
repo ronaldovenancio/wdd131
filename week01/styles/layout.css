@@ -1,7 +1,7 @@
 body {
   display: grid;
   height: 100vh;
-  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-template: 0.2fr 2fr 0.2fr / repeat(4, 1fr);
 }
 
 header {
@@ -10,6 +10,7 @@ header {
   grid-column: 1 / 5;
   color: white;
   text-align: left;
+  margin-bottom: -2rem;
 }
 
 /*.left-sidebar {
@@ -20,7 +21,7 @@ header {
 main {
   background: lightgray;
   grid-column: 1 / 4;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .right-sidebar {
@@ -30,7 +31,7 @@ main {
 
 footer {
   background: rgb(0 0 0 / 0.8);
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   grid-column: 1 / 5;
   color: white;
@@ -63,9 +64,9 @@ p {
 }
 
 nav {
-	margin: 0 auto 2rem;
+	margin: 0 auto 0.1rem;
   padding: 1rem;
-	max-width: 90vw;
+	max-width: 5fr;
 }
 
 /*
@@ -80,14 +81,14 @@ main {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #333;
+	background-color: rgb(1 2 2 / 0.1);
 	align-items: center;
 }
 .navigation li {
 	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
 }
 .navigation a {
-  background: rgb(0 0 0 / 0.8);
+  background: rgb(0 0 0 / 0.2);
 	display: block;
 	color: #eee;
 	padding: 0.75rem;
