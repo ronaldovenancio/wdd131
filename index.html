@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Ronaldo Venancio</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ronaldo Venancio da Silva - Home page to the course WDD131 by BYIU" />
+    <meta name="author" content="Ronaldo Venancio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>WDD 131 - Ronaldo Venancio</h1>
+    <!-- <h1>WDD 131 - Ronaldo Venancio</h1> -->
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals - Ronaldo Venancio </span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/ronaldo-venancio-b2772280/" class="active">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/manual/book-of-mormon-stories-2024/07-the-tree-of-life?lang=eng">Scripture</a></li>
+                <li><a href="finalProject.html">Final Project</a></li> <!-- Placeholder link -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/ronaldovenancio.jpg" alt="Photo of Ronaldo Venancio" width="300" height="200">
+            <p>
+                Hello! I’m a Math teacher in Military School of Recife passionate about web development and IT. I enjoy helping others and
+                building meaningful digital experiences.
+            </p>
+        </section>
+    
+        <section class="card">
+            <h2>My Interests</h2>
+            <img src="images/interests.jpg" alt="Collage of interests" width="300" height="200">
+            <p>
+                I love learning about new technologies, studying languages, and contributing to projects that improve user
+                experiences. I also enjoy traveling and exploring different cultures.
+            </p>
+        </section>
+    </main>
+
+    <div class="right-sidebar" contenteditable>Web Dev Resources</div>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Ronaldo Venancio, Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+        // Set last modified date
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>      
+      
 </body>
 </html>

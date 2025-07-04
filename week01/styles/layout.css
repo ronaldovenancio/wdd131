@@ -69,15 +69,8 @@ nav {
 	max-width:100%;
 	margin-left:-2rem;
     margin-right:-2rem;
-}
+} 
 
-/*
-main {
-	margin: 1rem;
-	border: 1px solid rgb(0 0 0 / .2);
-	padding: 1rem;
-	background-color: #eee;
-} */
 
 .navigation {
 	list-style: none;
@@ -86,6 +79,7 @@ main {
 	background-color: rgb(1 2 2 / 0.1);
 	align-items: center;
 }
+
 .navigation li {
 	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
 }

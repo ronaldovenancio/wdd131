@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: grid;
+    height: 100vh;
+    grid-template: 0.2fr 2fr 0.2fr / repeat(4, 1fr);
+
+}
+
+h1 {
+    font-weight: 100;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+header {
+    background: rgb(0 0 0 / 0.6);
+    grid-column: 1 / 5;
+    background-color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0 , 0, 0.1);
+}
+
+main {
+    background: lightgray;
+    grid-column: 1 / 4;
+    padding: 1rem; 
+}
+
+
+.right-sidebar {
+    background: white;
+    grid-column: 4 / 5;
+}
+
+footer {
+    background: rgb(0 0 0 / 0.8);
+    padding: 1rem;
+    text-align: center;
+    grid-column: 1 / 5;
+    color: white;
+}
+
+.left-sidebar,
+.right-sidebar {
+    padding: 1rem; }
+
+
+nav {
+    background-color: #36454f;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(1 2 2 / 0.1);
+    align-items: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+
+.navigation a {
+    background: rgb(0 0 0 / 0.2);
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+nav {
+    margin: 0 auto 0.1rem;
+    padding: 1rem;
+    max-width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+
+nav ul {
+    list-style-type: none;
+
+}
+
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+} 
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+.active {
+    color: yellow;
+}
+
+/* Larger Views *******************************/
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
+
