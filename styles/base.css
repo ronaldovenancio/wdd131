@@ -15,24 +15,44 @@ body {
 }
 
 h1 {
-    font-weight: 100;
+    font-weight: bold;
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     font-size: 2rem;
     text-align: center;
+}
 
+h2 {
+    display: block;
+    font-weight: bold;
+    padding: 1rem;
+   /* border: 1px solid rgb(0 0 0 / 10%); */
+    font-size: 1.5rem;
+    text-align: center;
+    align-content: center;
 }
 
 header {
     background: rgb(0 0 0 / 0.6);
     grid-column: 1 / 5;
     background-color: #bbb;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     padding: 20px;
     border: 1px solid rgba(0, 0 , 0, 0.1);
 }
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  align-content: center;
+  text-align: center;
+}
+
+
 
 main {
     background: lightgray;
@@ -44,6 +64,7 @@ main {
 .right-sidebar {
     background: white;
     grid-column: 4 / 5;
+    font-weight: bold;
 }
 
 footer {
@@ -60,25 +81,19 @@ footer {
 
 
 nav {
-    background-color: #36454f;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.navigation {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    /*list-style: none;
+     display: flex;
+    flex-wrap: wrap; */
     background-color: rgb(1 2 2 / 0.1);
     align-items: center;
+    max-width: 100%;
 }
 
-.navigation li {
-    flex: 1 1 auto;
-    /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+nav ul {
+  list-style-type: none;
 }
 
-.navigation a {
+nav a {
     background: rgb(0 0 0 / 0.2);
     display: block;
     color: #eee;
@@ -87,26 +102,15 @@ nav {
     text-align: center;
 }
 
-.navigation a:hover {
+nav a:hover {
     font-weight: 800;
     text-decoration: underline;
     text-decoration-color: yellow;
 }
 
-nav {
-    margin: 0 auto 0.1rem;
-    padding: 1rem;
-    max-width: 100%;
-    margin-left: 0rem;
-    margin-right: 0rem;
+nav a:hover {
+    border: 1px solid #fff;
 }
-
-
-nav ul {
-    list-style-type: none;
-
-}
-
 
 nav a {
     display: block;
@@ -116,13 +120,83 @@ nav a {
     text-decoration: none;
 } 
 
-nav a:hover {
-    border: 1px solid #fff;
-}
 
 .active {
-    color: yellow;
+    color: blue;
 }
+
+.web_sources ul {
+    
+    display: block;
+    color: #eee;
+    padding: 1.75rem;
+    margin: 1rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+ul li {
+  margin-bottom: 1rem; /* afasta cada item verticalmente */
+}
+
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.card .texto {
+  flex: 1;
+}
+
+/* Primeira seção: imagem à direita (texto primeiro) */
+.card:nth-of-type(2) {
+  flex-direction: row;
+}
+
+/* Segunda seção: imagem à esquerda (imagem primeiro) */
+.card:nth-of-type(3) {
+  flex-direction: row-reverse;
+}
+
+/* Estilos gerais para imagem e texto */
+.card img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin-top: 0;
+  align-content: center;
+}
+
+.card p {
+  flex: 1;
+  margin: 0;
+}
+
+
+
+/* Responsivo: empilhar em telas pequenas */
+@media (max-width: 640px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
+
 
 /* Larger Views *******************************/
 @media (min-width: 640px) {
