@@ -1,0 +1,31 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Common styling for header, main, and footer */
+header,main,footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #bbb;
+  background-color: #e6f2ff; 
+  box-sizing: border-box;
+}
+
+/* Main as a grid with one column and 1rem gap */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+/* Section styling */
+section {
+  padding: 1rem;
+  background-color: #ffffff; /* white or lighter background */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
