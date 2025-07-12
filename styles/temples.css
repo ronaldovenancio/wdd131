@@ -1,0 +1,205 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* permite quebra em telas pequenas */
+  padding: 0rem;
+  background-color: darkblue;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  flex-grow: 1;
+	background-color: darkblue;
+	color: white;
+}
+
+footer {
+    background: darkblue;
+    padding: 1rem;
+    text-align: center;
+    /*grid-column: 1 / 5; */
+    color: white;
+}
+
+h1 {
+	font-size: 1rem;
+	padding: 1rem;
+/*	background-color: #000; */
+	background-color: darkblue;
+	color: white;
+	text-align: center;
+}
+
+p {
+	margin: 0.1rem;
+	border: 1px solid rgb(0 0 0 /0.1);
+	padding: 0.1rem;
+	background-color: darkblue;
+}
+/* Mobile View ***************/
+#menu {
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+/*	background-color: #000; */
+	background-color: darkblue;
+	color: white;
+	cursor: pointer;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: darkblue;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: flex; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
+
+
+
+/* ****************************** */
+.stdlf {
+	font-weight: 700;border-bottom: 1px solid #777; margin-bottom: 1rem; text-align:center;
+}
+
+body {font-family: Roboto, sans-serif;}
+h1 {font-size: 2.5rem; padding: 1rem;background-color: #333;text-align: center;font-family: 'Acme', Arial, sans-serif; color:#fff;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.5rem; color: darkgreen;}
+section {margin: 1rem auto; max-width: 960px; padding: .5rem;}
+.container {display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 25px;place-items: center;}
+
+figure {background-color:#fff;}
+img { width: 100%; height: auto; margin: .5rem;}
+figcaption {font-size: smaller;}
+/* hover effect */
+.hover:hover {box-shadow: 0 0 50px #433;}
+/* rounded corners - boxmodel */
+.rocorn {border-radius: 15px 150px;}
+/* simple opacity */
+
+.opac {opacity: .8;}
+
+.blur {filter: blur(0.5px);}
+
+.gray {filter: blur(0.5px) grayscale(60%);}
+
+.object {width: 100%; height: 170px ; object-fit: cover;}
+
+.contrast {filter: contrast(60%);}
+
+.saturate {filter: saturate(50%);}
+
+.shape-outside {border-radius: 100px;   
+  shape-outside: circle();
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  margin: 0.5em 1em 0.5em 0;
+  float:left; }
+
+.transform {
+	transform: scaleX(-1)
+}
+
+.turn {
+	rotate: .01turn;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 1px;
+}
+
+.mosaic {
+	position: relative;
+	width: 90%;
+
+}
+
+.mosaic img {
+	width: 100%;
+	margin: 0;
+}
+		
+.pic {
+	background: #fff;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1FR 1fr;
+	grid-gap: 7px;
+	mix-blend-mode: lighten; /* try darken and overlay */
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+}
+.pic div {background: #000;	height: 18.5vw;	max-height: 640px;}
+
+.pic div:nth-of-type(3), .pic div:nth-of-type(8), .pic div:nth-of-type(13)  {	grid-column: 3/5; }
+

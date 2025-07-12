@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples Album Page - Dynamic Web Fundamentals - Ronaldo Venancio</title>
+    <meta name="description" content="This Temples Album Page is part of the WDD 131 - Dynamic Web Fundamentals course and demonstrates how to use media queries to create responsive layouts using HTML, CSS and JS.">
+    <meta name="author" content="Ronaldo Venancio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+
+ <header>
+    <h1>Temple Album</h1>
+  <a id="menu" href="#"></a> <!-- Botão de hambúrguer à direita -->
+    <nav>
+      <ul class="navigation">
+      	<li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li> 
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+<section>
+	<h2 class="stdlf">Brazil Temples</h2>
+	<div class="container stdlf">
+		<figure>
+			<img class="hover" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/1280x800/recife-brazil-temple-lds-700211-wallpaper.jpg" loading="lazy" width="250" height="167" alt="Recife Temple">
+			<figcaption>Recife Temple</figcaption>
+		</figure>
+		<figure><img class="rocorn" src="https://www.churchofjesuschrist.org/imgs/588d3a27e2b911ec94adeeeeac1e0a0694f432a0/full/1280%2C/0/default" loading="lazy" width="250" height="167" alt="Belem Temple">
+			<figcaption>Belem Temple</figcaption>
+		</figure>
+		<figure><img class="opac" src="https://www.churchofjesuschrist.org/imgs/c9a81a6f86750d7d9ade3499d3df52e2f7f726a7/full/1280%2C/0/default" alt="Campinas Temple">
+			<figcaption>Campinas Temple</figcaption>
+		</figure>
+		<figure><img class="blur" src="https://www.churchofjesuschrist.org/imgs/ea7e0f39c8e26d163a4dfedfcb1ce5c41d650b5b/full/1280%2C/0/default" loading="lazy" width="250" height="167" alt="Curitiba Temple">
+			<figcaption>Curitiba Temple</figcaption>
+		</figure>
+		<figure><img class="gray" src="https://churchofjesuschrist.org/imgs/e2a28dbb2b14f5f71d79b359cf9f7b88dc480144/full/1280%2C/0/default" loading="lazy" width="250" height="167" alt="Fortaleza Temple">
+			<figcaption>Fortaleza Temple</figcaption>
+		</figure>
+		<figure><img class="object" src="https://www.churchofjesuschrist.org/imgs/f758727dc0cd20dc24845be6e5810f81e400d603/full/1280%2C/0/default" loading="lazy" width="250" height="167" alt="Manaus Temple">
+			<figcaption>Manaus Temple<br><br>⚙️ <a href="https://www.youtube.com/watch?v=p5K6PTH_oI4" target="_blank">Manaus Brazil Temple</a></figcaption>
+		</figure>
+		<figure><img class="contrast" src="https://churchofjesuschrist.org/imgs/8b7f7031cc837345a3638255f73ad8df9b9ed693/full/1280%2C/0/default" loading="lazy" width="250" height="167" alt="Porto Alegre Temple">
+			<figcaption>Porto Alegre Temple</figcaption>
+		</figure>
+		<figure><img class="saturate" src="https://www.churchofjesuschrist.org/imgs/001db7326e638032470a02813c9e47191ef74b0e/full/1280%2C/0/default" loading="lazy" width="250" height="167" alt="Rio de Janeiro Temple">
+			<figcaption>Rio de Janeiro Temple</figcaption>
+		</figure>
+		<figure><img class="shape-outside" src="https://www.churchofjesuschrist.org/imgs/UlFyrs8Nz5vUZKIrUWEuLcfmvVr5wLfBnrDFKkAy/full/1280%2C/0/default" loading="lazy" width="250" height="167" alt="Salvador Temple"> 
+			<figcaption>Salvador Temple: The Salvador Brazil Temple is the 199th dedicated temple in operation of The Church of Jesus Christ of Latter-day Saints.
+			</figcaption>
+		</figure>
+		<figure><img class="transform" src="https://www.churchofjesuschrist.org/imgs/940f3e201364433a3d5d3dc14b0cacee38d41d1d/full/1280%2C/0/default" loading="lazy" width="250" height="167" alt="São Paulo Temple">
+			<figcaption>São Paulo Temple </figcaption>
+		</figure>
+		
+		<figure>
+			<img class="turn" src="https://www.churchofjesuschrist.org/imgs/95f3f3abdd4811ed920ceeeeac1e15db91037802/full/1280%2C/0/default" loading="lazy" width="250" height="167" alt="Brasília Temple">
+			<figcaption>Brasília Temple</figcaption>
+		</figure>
+		</div>
+</section>
+
+  </main>
+
+   <footer>
+        <p>
+            &copy; <span id="currentyear"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
