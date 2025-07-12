@@ -159,13 +159,15 @@ figcaption {font-size: smaller;}
 
 .saturate {filter: saturate(50%);}
 
+/*
 .shape-outside {border-radius: 100px;   
-  shape-outside: circle();
+  shape-outside: circle(50%);
   width: 210px;
   height: 210px;
   border-radius: 50%;
   margin: 0.5em 1em 0.5em 0;
   float:left; }
+*/
 
 .transform {
 	transform: scaleX(-1)
