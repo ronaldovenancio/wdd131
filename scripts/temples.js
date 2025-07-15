@@ -1,12 +1,15 @@
 // temples.js
 
-// Insere o ano atual no primeiro parágrafo do footer
-const currentYear = new Date().getFullYear();
-document.querySelector("footer p:nth-of-type(1)").textContent = `© ${currentYear} .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. `;
+/* Current Date & Last Modified Code */
+const outputDate = document.querySelector("#currentYear");
+const outputModified = document.querySelector("#lastModified");
+  
+const date = new Date().getFullYear();
+let lastModified = document.lastModified;
 
-// Insere a data da última modificação no segundo parágrafo
-const lastModified = document.lastModified;
-document.querySelector("footer p:nth-of-type(2)").textContent = `Last modified: ${lastModified}`;
+outputDate.textContent = date;
+outputModified.textContent = lastModified;
+
 
 // Store the selected elements that we are going to use. This is not required but a good practice with larger programs where the variable will be referenced more than once.
 const mainnav = document.querySelector('.navigation')
