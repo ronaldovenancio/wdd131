@@ -75,6 +75,12 @@ footer {
     color: white;
 }
 
+.highlight {
+    color: yellow;
+    padding-top: 10px;
+}
+
+
 .left-sidebar,
 .right-sidebar {
     padding: 1rem; }
