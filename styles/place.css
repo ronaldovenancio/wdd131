@@ -16,6 +16,10 @@ body {
     color: var(--text-color);
 }
 
+h1 {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header,
 footer {
     background-color: var(--accent-color);
