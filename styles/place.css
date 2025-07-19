@@ -36,6 +36,7 @@ main {
 }
 
 /* Estilo padrão para telas grandes */
+
 .weather,
 .place-info {
     position: absolute;
@@ -47,21 +48,22 @@ main {
 }
 
 .weather {
-    top: 20px;
-    left: 20px;
+    bottom: 20px;
+    right: 20px;
 }
 
 /* Estilo geral do ícone */
 .weather-icon {
-    width: 24px;
+    width: 12px;
     height: auto;
     vertical-align: middle;
     margin-left: 0.5rem;
 }
 
 .place-info {
-    bottom: 20px;
-    right: 20px;
+    top: 20px;
+    left: 20px;
+    border-top-left-radius: 20px;
     text-align: right;
 }
 
@@ -81,9 +83,24 @@ main {
         align-items: center;
     }
 
+        .conteudo {
+            display:block;
+            position: relative;
+            background-color: rgba(7, 1, 106, 0.6);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            max-width: 100%;
+            text-align: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+          
+
+       
     .weather,
     .place-info {
-        position: static;
+        position:static;
         background-color: rgba(0, 0, 0, 0.6);
         text-align: center;
         margin: 1rem 0;
@@ -97,13 +114,21 @@ main {
          margin-bottom: 0.2rem;
     }
 
+    
     .weather-icon {
          display: block;
          margin: 0.3rem auto 0.8rem;
-        width: 1px;
-    }
+         width: 12px;
+        height: auto;
+    } 
 
-        
+    
+        .weather-icon {
+            width: 12px;
+            height: auto;
+            vertical-align: middle;
+            margin-left: 0.5rem;
+        } 
 
     .weather h2::after {
         display: none;
@@ -111,22 +136,39 @@ main {
 
     .mobile-weather-icon {
         display: block;
-        width: 40px;
+        width: 12px;
         margin: 0.5rem auto;
     }
 }
 
 /* TELAS MAIORES: mostrar emoji */
 
-@media (min-width: 700px) {
+@media (min-width: 701px) {
     .mobile-weather-icon {
         display: block;
-        width: 32px;
+        width: 12px;
         /* ou 24px se quiser menor */
         height: auto;
         margin: 0.5rem auto;
         /* centraliza horizontalmente */
     }
+
+        .conteudo {
+            display: block;
+            position: relative;
+            background-color: rgba(9, 2, 132, 0.6);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            max-width: 100%;
+            text-align: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+
+
+
+        
 
         .weather h2 {
             display: flex;
@@ -137,11 +179,24 @@ main {
         .weather-icon {
             display: inline-block;
             margin: 0;
-        }
+            width: 12px;
+            height: auto;
+        } 
 
         .weather h2::after {
             display: inline;
     }
+
+        .weather,
+        .place-info {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            max-width: 300px;
+        }
+
 }
 
 
