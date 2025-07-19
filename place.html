@@ -15,15 +15,35 @@
 
 <body>
 
+    <header>
+        <h1>My next place to visit - Paris</h1>
+    </header>
+
     <main>
 	
-        <div class="hero">
+        <section class="hero">
           <picture>
             <source srcset="images/parisFranceArcTriumph-large.webp" media="(min-width: 1200px)">
             <source srcset="images/parisFranceArcTriumph-medium.webp" media="(min-width: 800px)">
             <img src="images/parisFranceArcTriumph-small.webp" alt="Arc Triumph - Paris - France" width="800" height="400">
           </picture>
-        </div>
+        
+        <!-- Conteúdo sobreposto -->
+            <div class="hero-content">
+                <section class="weather">
+                    <h2>Weather</h2>
+                    <img src="images/weather-icon.svg" alt="Partly sunny" class="mobile-weather-icon" />
+                    <p>Current weather: Partly sunny, 7°C</p>
+                    <!-- JS irá adicionar o windchill aqui -->
+                </section>
+            
+                <section class="place-info">
+                    <h2>Why I Love This Place</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </section>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
