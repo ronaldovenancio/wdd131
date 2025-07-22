@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Lazy Load Demonstration - Dynamic Web Fundamentals - Ronaldo Venancio</title>
+    <meta name="description"
+        content="This Web Page is part of the WDD 131 - Dynamic Web Fundamentals course and demonstrates 
+    how to use media queries to create responsive layouts using HTML, CSS and JS. The subject of the page is a country or place where you live, have visited, or wish to visit.">
+    <meta name="author" content="Ronaldo Venancio da Silva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Lazy Load Demonstration</h1>
+    </header>
+
+    <main>
+        <picture>
+            <img src="https://picsum.photos/seed/picsum/400/600" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem sint quas consequuntur iste molestias inventore temporibus atque mollitia nihil magnam dolore, asperiores cupiditate odio rem est possimus accusantium voluptatem aliquid!
+        </p>
+        <picture>
+            <img src="https://picsum.photos/200/300?grayscale" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/200/300/?blur" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/200/300/?blur=2" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/870/400/600?grayscale&blur=2" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600.webp" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷.
+        </p>
+        <p class="highlight">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
