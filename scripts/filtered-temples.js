@@ -102,6 +102,38 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/montreal-quebec-temple/montreal-quebec-temple-10671-main.jpg"
     },
+    {
+        templeName: "Lisbon Portugal",
+        location: "Lisbon, Portugal",
+        dedicated: "2019, September, 15",
+        area: 23730,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/lisbon-portugal-temple/lisbon-portugal-temple-6315-main.jpg"
+    },
+    {
+        templeName: "Madrid Spain",
+        location: "Madrid, Spain",
+        dedicated: "1999, March, 19",
+        area: 45800,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg"
+    },
+    {
+        templeName: "St. George Utah",
+        location: "St. George, Utah, United States",
+        dedicated: "1877, April, 6",
+        area: 143969,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-main.jpg"
+    },
+    {
+        templeName: "Colonia Juarez Chihuahua",
+        location: "Colonia Juarez, Chihuahua, Mexico",
+        dedicated: "1999, March, 6",
+        area: 6800,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/colonia-juarez-chihuahua-mexico-temple/colonia-juarez-chihuahua-mexico-temple-1601-main.jpg"
+    },
     // Add more temple objects here...
 ];
 

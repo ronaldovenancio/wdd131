@@ -150,6 +150,15 @@ section stdlf {
 }
 
 
+.container section {
+    background-color: whitesmoke;
+    /* ou qualquer cor */
+    width: 320px;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
 /* ****************************** */
 .stdlf {
     font-weight: 700;
