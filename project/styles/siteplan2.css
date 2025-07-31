@@ -1,0 +1,391 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #ccd5ae;
+    --secondary-color: #e9edc9;
+    --accent1-color: #fefae0;
+    --accent2-color: #aba5a5;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Playfair Display";
+    --paragraph-font: Roboto, Lato, Helvetica, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #274c67;
+    /* headlines on a white background */
+    --headline-color-on-color: rgb(158, 154, 154);
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #25638f;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: white;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #143b57;
+    /* --nav-link-color: #0b3d63; */
+    --nav-link-color: whitesmoke;
+    --nav-background-color: #ddd09c;
+    --nav-hover-link-color: rgb(79, 77, 77);
+    --nav-hover-background-color: #dabd19;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    padding-top: 0px;
+    align-items: center;
+    align-content: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', 'Roboto', 'Bradley Hand', sans-serif;
+    color: rgb(3, 3, 21);
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+}
+
+/*
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+header h1,
+header h2 {
+    color: var(--headline-color-on-color);
+} */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* permite quebra em telas pequenas */
+    padding: 0rem;
+    background-color: darkblue;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    background-color: darkblue;
+    color: white;
+}
+
+p {
+    font-family: 'Playfair Display', 'Roboto', 'Bradley Hand', sans-serif;
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+    text-align: left;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+} 
+
+nav {
+    list-style-type: none;
+    display: flex;
+
+} 
+
+nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+
+} 
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas: ". . home home . ."
+        ". . . top . ."
+        ". left left right right ."
+        "page2 page2 . . page3 page3";
+}
+
+.sitemap div {
+
+    text-align: center;
+
+}
+
+.sm-home {
+    grid-area: home;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page2 {
+    grid-area: page2;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page3 {
+    grid-area: page3;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.top {
+    grid-area: top;
+    border-left: 1px solid;
+}
+
+.left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+footer {
+    background: darkblue;
+    padding: 1rem;
+    text-align: center;
+    /*grid-column: 1 / 5; */
+    color: white;
+}
+
+footer p {
+    margin: 0.1rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    padding: 0.2rem;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+/* Mobile View ***************/
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    /*	background-color: #000; */
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: darkblue;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.highlight {
+    color: yellow;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: flex;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+section stdlf {
+    background-color: ghostwhite;
+}
+
+
+.container section {
+    background-color: whitesmoke;
+    /* ou qualquer cor */
+    width: 320px;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+/* ****************************** */
+.stdlf {
+    font-weight: 700;
+    border-bottom: 1px solid #777;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #333;
+    text-align: center;
+    font-family: 'Acme', Arial, sans-serif;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: darkgreen;
+}
