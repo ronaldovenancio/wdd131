@@ -259,12 +259,60 @@ footer .container {
     height: 20px;
 }
 
-/* Remove ou reduz a margem inferior do input date */
-#install-date {
-    margin-bottom: 0.2rem;
-    margin-top: -0.4rem;
-    /* valor menor que o padrão, pode ajustar */
+
+.rating-group {
+    border: none;
+    margin-bottom: 0.4rem;
+    margin-top: 0.2rem;
+    padding: 0;
+    text-align: center;
 }
+
+
+
+.rating-group legend {
+    text-align: left;
+    /* 🔹 alinha o título à esquerda */
+    width: 100%;
+    /* 🔹 ocupa toda a largura do fieldset */
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.1rem; /* 🔽 Reduzido para aproximar do conteúdo */
+}
+
+
+.rating-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    /* espaço entre os blocos */
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-option .stars {
+    font-size: 1rem;
+    line-height: 1;
+    color: #444;
+    margin-bottom: 0.2rem;
+}
+
+.rating-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.rating-option span {
+    font-size: 1.2rem;
+    margin-bottom: 0.01rem;
+}
+
+
 
 
 /* ===== Features Checkboxes ===== */

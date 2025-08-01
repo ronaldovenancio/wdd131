@@ -52,35 +52,38 @@
                 <!-- Options will be populated dynamically via JS -->
             </select>
         
-            <!-- Overall Rating -->
             <fieldset class="rating-group">
                 <legend>Overall Rating:</legend>
-        
-                <label class="rating-option" for="rating1">
-                    <input type="radio" name="rating" id="rating1" value="1" required>
-                    ☆
-                </label>
-        
-                <label class="rating-option" for="rating2">
-                    <input type="radio" name="rating" id="rating2" value="2">
-                    ☆☆
-                </label>
-        
-                <label class="rating-option" for="rating3">
-                    <input type="radio" name="rating" id="rating3" value="3">
-                    ☆☆☆
-                </label>
-        
-                <label class="rating-option" for="rating4">
-                    <input type="radio" name="rating" id="rating4" value="4">
-                    ☆☆☆☆
-                </label>
-        
-                <label class="rating-option" for="rating5">
-                    <input type="radio" name="rating" id="rating5" value="5">
-                    ☆☆☆☆☆
-                </label>
+            
+                <div class="rating-row">
+                    <label class="rating-option" for="rating1">
+                        <span>☆</span>
+                        <input type="radio" name="rating" id="rating1" value="1" required>
+                    </label>
+            
+                    <label class="rating-option" for="rating2">
+                        <span>☆☆</span>
+                        <input type="radio" name="rating" id="rating2" value="2">
+                    </label>
+            
+                    <label class="rating-option" for="rating3">
+                        <span>☆☆☆</span>
+                        <input type="radio" name="rating" id="rating3" value="3">
+                    </label>
+            
+                    <label class="rating-option" for="rating4">
+                        <span>☆☆☆☆</span>
+                        <input type="radio" name="rating" id="rating4" value="4">
+                    </label>
+            
+                    <label class="rating-option" for="rating5">
+                        <span>☆☆☆☆☆</span>
+                        <input type="radio" name="rating" id="rating5" value="5">
+                    </label>
+                </div>
             </fieldset>
+
+
         
             <!-- Installation Date -->
             <fieldset class="install-group">
