@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - W05 Assignment: Product Review Form - Dynamic Web Fundamentals - Ronaldo Venancio</title>
+    <meta name="description"
+        content="This Product Review Form is part of the WDD 131 - Dynamic Web Fundamentals course and demonstrates how to use media queries to create responsive layouts using HTML, CSS and JS.">
+    <meta name="author" content="Ronaldo Venancio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header class="narrow-section">
+        <div class="container">
+            <h1>Product Review</h1>
+        
+        <!--
+        <a id="menu" href="#"></a>
+        -->
+         <!-- Botão de hambúrguer à direita -->
+        <!--
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home" class="active">Home</a></li>
+                <li><a href="#" id="nonutah">Non Utah</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+         -->
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+        <!--
+        <section>
+            <h2 class="stdlf">Temples Around the World</h2>
+            <div class="container stdlf">
+
+            </div>
+        </section>
+        -->
+        <!--
+
+        <form action="#" method="post" class="review-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required>
+        
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="">Choose a rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+        
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+        
+            <label>
+                <input type="checkbox" name="recommend" value="yes">
+                I recommend this product
+            </label>
+        
+            <button type="submit">Submit Review</button>
+        </form>
+        -->
+
+
+
+        <form method="get" action="review.html" class="review-form">
+            <!-- Product Name -->
+            <label for="product-name">Product Name:</label>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- Options will be populated dynamically via JS -->
+            </select>
+        
+            <!-- Overall Rating -->
+            <fieldset class="rating-group">
+                <legend>Overall Rating:</legend>
+                <div class="rating-option">
+                    <span>☆</span>
+                    <input type="radio" name="rating" id="rating1" value="1" required>
+                </div>
+                <div class="rating-option">
+                    <span>☆☆</span>
+                    <input type="radio" name="rating" id="rating2" value="2">
+                </div>
+                <div class="rating-option">
+                    <span>☆☆☆</span>
+                    <input type="radio" name="rating" id="rating3" value="3">
+                </div>
+                <div class="rating-option">
+                    <span>☆☆☆☆</span>
+                    <input type="radio" name="rating" id="rating4" value="4">
+                </div>
+                <div class="rating-option">
+                    <span>☆☆☆☆☆</span>
+                    <input type="radio" name="rating" id="rating5" value="5">
+                </div>
+            </fieldset>
+
+
+
+            <fieldset class="install-group">
+                <legend>Date of Installation</legend>
+                <div class="date-wrapper">
+                    <input type="date" id="install-date" name="install-date" required>
+                    <span class="calendar-icon" aria-hidden="true">📅</span>
+                </div>
+            </fieldset>
+
+
+
+
+            <fieldset class="features-group">
+                <legend>Which features did you find useful in the product? <br>(Check all that apply):</legend>
+            
+                <label>
+                    <input type="checkbox" id="feature1" name="features" value="Durability">
+                    Durability
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="feature2" name="features" value="Ease of Use">
+                    Ease of Use
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="feature3" name="features" value="Design">
+                    Design
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="feature4" name="features" value="Performance">
+                    Performance
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="feature5" name="features" value="Battery Life">
+                    Battery Life
+                </label>
+            </fieldset>
+
+
+
+            <label for="written-review">Written Review:</label>
+            <textarea id="written-review" name="written-review" rows="5" cols="40"
+                placeholder="Write your comments here..."></textarea>
+
+
+            <label for="user-name">User Name:</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
+
+
+        
+            <!-- Submit Button -->
+            <button type="submit">Post Review</button>      
+
+        </form>
+        </div>
+
+    </main>
+
+    <footer class="narrow-section">
+        <div class="container">
+        <p>
+            &copy; <span id="currentYear"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷.
+        </p>
+        <p class="highlight">Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

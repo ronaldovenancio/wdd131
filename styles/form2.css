@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* permite quebra em telas pequenas */
+    padding: 0rem;
+    background-color: darkblue;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    background-color: darkblue;
+    color: white;
+}
+
+footer {
+    background: darkblue;
+    padding: 1rem;
+    text-align: center;
+    /*grid-column: 1 / 5; */
+    color: white;
+}
+
+h1 {
+    font-size: 1rem;
+    padding: 1rem;
+    /*	background-color: #000; */
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.1rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    padding: 0.2rem;
+    background-color: darkblue;
+}
+
+p {
+    margin: 0.1rem;
+    padding: 0.2rem;
+    /* border: 1px solid rgb(0 0 0 /0.1);
+    background-color: rgb(234, 234, 237); */
+}
+
+
+.review-form {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form label {
+    display: block;
+    margin: 1rem 0 0.25rem;
+    font-weight: bold;
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.review-form button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.review-form button:hover {
+    background-color: navy;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    /* espaço entre estrelas */
+    align-items: center;
+    flex-wrap: wrap;
+    /* permite quebra em telas pequenas */
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    /* tamanho da estrela */
+}
+
+.rating-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: none;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.rating-option input[type="radio"] {
+    margin-top: 0.3rem;
+    cursor: pointer;
+}
+
+.features-group {
+    border: none;
+    padding: 0.5rem 0;
+    /* Reduz o padding da seção */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    /* Reduz o espaço entre checkboxes */
+    text-align: left;
+    margin-bottom: 0.5rem;
+    /* Reduz espaço após a seção */
+}
+
+.features-group legend {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    /* Reduz espaço abaixo do título */
+}
+
+.features-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    /* Fonte levemente menor */
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    /* Remove margens extras */
+    line-height: 1.2;
+    /* Reduz altura da linha */
+}
+
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    resize: vertical;
+    /* permite o redimensionamento vertical */
+    font-family: Roboto, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 1.4;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Roboto, sans-serif;
+}
+
+
+input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: navy;
+}
+
+/* Centraliza o conteúdo e limita largura */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Aplica o fundo SOMENTE dentro do container */
+.narrow-section .container {
+    background-color: darkblue;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Remove fundo do header/footer globalmente */
+header,
+footer {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Header específico */
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+/* Footer específico */
+footer .container {
+    text-align: center;
+}
+
+footer p {
+    margin: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.highlight {
+    color: yellow;
+}
+
+/* Global reset */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+
+/* Mobile View ***************/
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    /*	background-color: #000; */
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: darkblue;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.highlight {
+    color: yellow;
+    padding-top: 10px;
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: flex;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+section stdlf {
+    background-color: ghostwhite;
+}
+
+
+.container section {
+    background-color: whitesmoke;
+    /* ou qualquer cor */
+    width: 320px;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+/* ****************************** */
+.stdlf {
+    font-weight: 700;
+    border-bottom: 1px solid #777;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #333;
+    text-align: center;
+    font-family: 'Acme', Arial, sans-serif;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: darkgreen;
+}
+
+section {
+    margin: 1rem auto;
+    max-width: 960px;
+    padding: .5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+figure {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+/* hover effect */
+.hover:hover {
+    box-shadow: 0 0 50px #433;
+}
