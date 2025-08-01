@@ -55,86 +55,86 @@
             <!-- Overall Rating -->
             <fieldset class="rating-group">
                 <legend>Overall Rating:</legend>
-                <div class="rating-option">
-                    <span>☆</span>
+        
+                <label class="rating-option" for="rating1">
                     <input type="radio" name="rating" id="rating1" value="1" required>
-                </div>
-                <div class="rating-option">
-                    <span>☆☆</span>
+                    ☆
+                </label>
+        
+                <label class="rating-option" for="rating2">
                     <input type="radio" name="rating" id="rating2" value="2">
-                </div>
-                <div class="rating-option">
-                    <span>☆☆☆</span>
+                    ☆☆
+                </label>
+        
+                <label class="rating-option" for="rating3">
                     <input type="radio" name="rating" id="rating3" value="3">
-                </div>
-                <div class="rating-option">
-                    <span>☆☆☆☆</span>
+                    ☆☆☆
+                </label>
+        
+                <label class="rating-option" for="rating4">
                     <input type="radio" name="rating" id="rating4" value="4">
-                </div>
-                <div class="rating-option">
-                    <span>☆☆☆☆☆</span>
+                    ☆☆☆☆
+                </label>
+        
+                <label class="rating-option" for="rating5">
                     <input type="radio" name="rating" id="rating5" value="5">
-                </div>
+                    ☆☆☆☆☆
+                </label>
             </fieldset>
-
-
-
+        
+            <!-- Installation Date -->
             <fieldset class="install-group">
                 <legend>Date of Installation</legend>
                 <div class="date-wrapper">
+                    <label for="install-date" class="visually-hidden">Installation Date</label>
                     <input type="date" id="install-date" name="install-date" required>
                     <span class="calendar-icon" aria-hidden="true">📅</span>
                 </div>
             </fieldset>
-
-
-
-
+        
+            <!-- Features -->
             <fieldset class="features-group">
                 <legend>Which features did you find useful in the product? <br>(Check all that apply):</legend>
-            
-                <label>
+        
+                <label for="feature1">
                     <input type="checkbox" id="feature1" name="features" value="Durability">
                     Durability
                 </label>
-            
-                <label>
+        
+                <label for="feature2">
                     <input type="checkbox" id="feature2" name="features" value="Ease of Use">
                     Ease of Use
                 </label>
-            
-                <label>
+        
+                <label for="feature3">
                     <input type="checkbox" id="feature3" name="features" value="Design">
                     Design
                 </label>
-            
-                <label>
+        
+                <label for="feature4">
                     <input type="checkbox" id="feature4" name="features" value="Performance">
                     Performance
                 </label>
-            
-                <label>
+        
+                <label for="feature5">
                     <input type="checkbox" id="feature5" name="features" value="Battery Life">
                     Battery Life
                 </label>
             </fieldset>
-
-
-
+        
+            <!-- Written Review -->
             <label for="written-review">Written Review (Optional):</label>
             <textarea id="written-review" name="written-review" rows="5" cols="40"
                 placeholder="Write your comments here..."></textarea>
-
-
+        
+            <!-- User Name -->
             <label for="user-name">User Name (Optional):</label>
             <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
-
-
         
             <!-- Submit Button -->
-            <button type="submit">Post Review</button>      
-
+            <button type="submit">Post Review</button>
         </form>
+
         </div>
 
     </main>
