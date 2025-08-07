@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - W05 Assignment: Product Review Form - Dynamic Web Fundamentals - Ronaldo Venancio</title>
+    <meta name="description"
+        content="This Product Review Form is part of the WDD 131 - Dynamic Web Fundamentals course and demonstrates how to use media queries to create responsive layouts using HTML, CSS and JS.">
+    <meta name="author" content="Ronaldo Venancio da Silva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form-project.css">
+    <script src="scripts/form-project.js" defer></script>
+</head>
+
+<body>
+
+    <header class="narrow-section">
+        <div class="container">
+            <h1>MathStarsCMR Review</h1>
+
+            <!--
+        <a id="menu" href="#"></a>
+        -->
+            <!-- Botão de hambúrguer à direita -->
+            <!--
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home" class="active">Home</a></li>
+                <li><a href="#" id="nonutah">Non Utah</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+         -->
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <form method="get" action="review-project.html" class="review-form">
+                <!-- Product Name -->
+                <label for="site-name">Site Name:</label>
+                <select id="site-name" name="site-name" required>
+                    <option value="">Please Select a Math Site ...</option>
+                    <!-- Options will be populated dynamically via JS -->
+                </select>
+
+                <fieldset class="rating-group">
+                    <legend>Overall Rating:</legend>
+
+                    <div class="rating-row">
+                        <label class="rating-option" for="rating1">
+                            <span>☆</span>
+                            <input type="radio" name="rating" id="rating1" value="1" required>
+                        </label>
+
+                        <label class="rating-option" for="rating2">
+                            <span>☆☆</span>
+                            <input type="radio" name="rating" id="rating2" value="2">
+                        </label>
+
+                        <label class="rating-option" for="rating3">
+                            <span>☆☆☆</span>
+                            <input type="radio" name="rating" id="rating3" value="3">
+                        </label>
+
+                        <label class="rating-option" for="rating4">
+                            <span>☆☆☆☆</span>
+                            <input type="radio" name="rating" id="rating4" value="4">
+                        </label>
+
+                        <label class="rating-option" for="rating5">
+                            <span>☆☆☆☆☆</span>
+                            <input type="radio" name="rating" id="rating5" value="5">
+                        </label>
+                    </div>
+                </fieldset>
+
+
+
+                <!-- Installation Date -->
+                <fieldset class="install-group">
+                    <legend>Date of Avaliation</legend>
+                    <div class="date-wrapper">
+                        <label for="install-date" class="visually-hidden">Avaliation Date</label>
+                        <input type="date" id="install-date" name="install-date" required>
+                        <span class="calendar-icon" aria-hidden="true">📅</span>
+                    </div>
+                </fieldset>
+
+                <!-- Features -->
+                <fieldset class="features-group">
+                    <legend>Which features did you find most useful on the Math Olympiad websites you visited? <br>(Check all that apply):</legend>
+
+                    <label for="feature1">
+                        <input type="checkbox" id="feature1" name="features" value="Durability">
+                        Exam and event calendar
+                    </label>
+
+                    <label for="feature2">
+                        <input type="checkbox" id="feature2" name="features" value="Ease of Use">
+                        News and recent updates
+                    </label>
+
+                    <label for="feature3">
+                        <input type="checkbox" id="feature3" name="features" value="Design">
+                        Past exams and answer keys
+                    </label>
+
+                    <label for="feature4">
+                        <input type="checkbox" id="feature4" name="features" value="Performance">
+                        Study and preparation materials
+                    </label>
+
+                    <label for="feature5">
+                        <input type="checkbox" id="feature5" name="features" value="Battery Life">
+                        Website design and organization
+                    </label>
+                </fieldset>
+
+                <!-- Written Review -->
+                <label for="written-review">Written Review (Optional):</label>
+                <textarea id="written-review" name="written-review" rows="5" cols="40"
+                    placeholder="Write your comments here..."></textarea>
+
+                <!-- User Name -->
+                <label for="user-name">User Name (Optional):</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
+
+                <!-- Submit Button -->
+                <button type="submit">Post Review</button>
+            </form>
+
+
+        </div>
+
+    </main>
+
+    <footer class="narrow-section">
+        <div class="container">
+            <p>
+                &copy; <span id="currentYear"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷.
+            </p>
+            <p class="highlight">Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

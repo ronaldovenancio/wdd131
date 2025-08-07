@@ -1,0 +1,488 @@
+/* ===== Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    /*background-color: #f9f9f9;*/
+    background-color: white;
+    color: #333;
+}
+
+
+/* ===== Container for Layout Consistency ===== */
+.container {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+/* ===== Header and Footer - Centralized Width with Background Inside ===== */
+.narrow-section .container {
+    background-color: darkblue;
+    color: white;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+header,
+footer {
+    background-color: transparent;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+header .container,
+footer .container {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-align: center;
+}
+
+.highlight {
+    color: yellow;
+}
+
+/* ===== Form Styling ===== */
+.review-form {
+    background-color: #dbd9d9;
+    /* cinza claro */
+    max-width: 500px;
+    margin: 0.5rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* A caixa de seleção (select dropdown) */
+#product-name {
+    background-color: white;
+    color: black;
+    border: none;
+    /*  border: 1px solid #ccc; */
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.review-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.install-group {
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.install-group legend {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.date-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    max-width: 100%;
+}
+
+.date-wrapper input[type="date"] {
+    border-radius: 5px;
+    border: none;
+    /*  border: 1px solid #ccc; */
+    background-color: #fff;
+    font-size: 1rem;
+    appearance: none;
+    width: 100%;
+    appearance: auto;
+    padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+}
+
+
+.date-hint {
+    font-size: 0.75rem;
+    color: #777;
+    margin-left: 0.1rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+
+/* Ícone de calendário simples */
+.calendar-icon {
+    position: absolute;
+    right: 0.75rem;
+    top: 40%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+    margin-top: 0;
+    /* remove espaço extra acima dos inputs */
+}
+
+
+.review-form input[type="text"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    font-family: Roboto, sans-serif;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+    margin-top: 0;
+    /* garante que eles fiquem colados ao label */
+}
+
+.review-form label,
+.review-form select,
+.review-form input,
+.review-form textarea,
+.review-form fieldset {
+    margin-bottom: 0.5rem;
+}
+
+.review-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+
+.review-form button[type="submit"] {
+    display: block;
+    margin: 1.5rem auto 0 auto;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: black;
+    border: none;
+    /* border: 2px solid black;
+    border-radius: 5px; */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    /* Ocupa 100% da largura do container pai */
+    max-width: 960px;
+    /* Igual a largura máxima do container principal */
+    box-sizing: border-box;
+    /* Para padding e border não estourarem a largura */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.review-form button[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+/* ===== Rating Section ===== */
+.rating-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.2rem 0;
+    /* reduzido */
+    border: none;
+    margin: 0;
+    margin-bottom: 0.8rem;
+    /* adiciona controle abaixo, se quiser */
+    flex-wrap: wrap;
+
+}
+
+
+.rating-group legend {
+    font-weight: bold;
+    font-size: 1rem;
+    /* ajuste opcional */
+    margin-top: 0.1rem;
+    /* dá um espaço entre o título e as estrelas */
+}
+
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.rating-option input[type="radio"] {
+    margin-top: 0.1rem;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+
+.rating-group {
+    border: none;
+    margin-bottom: 0.4rem;
+    margin-top: 0.2rem;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+.rating-group legend {
+    text-align: left;
+    /* 🔹 alinha o título à esquerda */
+    width: 100%;
+    /* 🔹 ocupa toda a largura do fieldset */
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    /* 🔽 Reduzido para aproximar do conteúdo */
+}
+
+
+.rating-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    /* espaço entre os blocos */
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-option .stars {
+    font-size: 1rem;
+    line-height: 1;
+    color: #444;
+    margin-bottom: 0.2rem;
+}
+
+.rating-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.rating-option span {
+    font-size: 1.2rem;
+    margin-bottom: 0.01rem;
+}
+
+
+
+
+/* ===== Features Checkboxes ===== */
+.features-group {
+    border: none;
+    padding: 0.5rem 0;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+
+/* Remove ou reduz a margem superior do grupo de features */
+.features-group {
+    margin-top: 0.25rem;
+    /* valor menor para aproximar o grupo do campo de data */
+}
+
+.features-group legend {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    text-align: left;
+    color: #333;
+}
+
+.features-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    /* Reduzido ainda mais */
+    margin: 0.1rem 0;
+    padding: 0;
+    font-weight: normal;
+    color: #444;
+    line-height: 1.2;
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    /* reduz a margem entre linhas */
+    line-height: 1.1;
+    /* ajusta a altura da linha para ficar mais compacta */
+}
+
+
+
+
+.features-group label {
+    margin-bottom: 0.1rem;
+    /* reduz a margem entre linhas */
+    line-height: 1.1;
+    /* ajusta a altura da linha para ficar mais compacta */
+}
+
+.features-group input[type="checkbox"] {
+    transform: scale(1.3);
+    /* aumenta 30% */
+    margin-right: 0.3rem;
+    /* mantém um pequeno espaçamento à direita */
+    cursor: pointer;
+}
+
+/* ===== Textarea and Inputs ===== */
+textarea {
+    resize: vertical;
+    line-height: 1.4;
+}
+
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+/* ===== Responsive Navigation (if used) ===== */
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: darkblue;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
+@media (max-width: 500px) {
+    .review-form {
+        padding: 1rem;
+    }
+
+    .review-form label,
+    .review-form input,
+    .review-form textarea,
+    .review-form select {
+        font-size: 0.9rem;
+    }
+
+    .rating-option {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: flex;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
