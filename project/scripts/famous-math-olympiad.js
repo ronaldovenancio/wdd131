@@ -43,17 +43,15 @@ const temples = [
         reference: '<a href=https://www.egmo.org target="_blank">EGMO Math Olympiad</a>'
     },
     {
-        templeName: "IMC - Internation Mathematical Olympiad",
-        location: "Bulgaria, Europe",
-        dedicated: "1994, June, 7",
-        area: 96630,
+        templeName: "EMC - European Mathematical Cup",
+        location: "Europe",
+        dedicated: "2012, May, 21",
+        area: 44175,
         imageUrl:
-            "https://chiuchang.org/imc/wp-content/uploads/sites/2/2024/02/2024-InIMC-1024x1017.x17381.jpeg",
-         //   "https://olimpiadascientificas.org/static/images/imc.jpg",
-          //  "https://chiuchang.org/imc/wp-content/uploads/sites/2/2025/05/cropped-IMC_flag_小圖-2.x17381.jpg",
-          //  "https://i.ytimg.com/vi/J4_ze95nBqw/hqdefault.jpg",
-        reference: '<a https://www.imc-math.org.uk target="_blank">IMC Math Olympiad</a>'
-    },
+            "https://emc.mnm.hr/wp-content/uploads/2023/10/cropped-header-1.png",
+        //  "https://sedu.es.gov.br/Media/sedu/_Profiles/c4d8c6e6/982b8e1d/OCMAT%20-%20TERCEIRA%20E%20ÚLTIMA%20FASE_banner.png?v=638899084755199810",
+        reference: '<a href=https://emc.mnm.hr target="_blank">EMC Math Cup</a>'
+    }, 
     {
         templeName: "RMM - Romanian Master of Mathematics",
         location: "Romania, Europe",
@@ -107,14 +105,16 @@ const temples = [
         reference: '<a href=https://www.apmo-official.org target="_blank">APMO Math Olympiad</a>'
     },
     {
-        templeName: "EMC - European Mathematical Cup",
-        location: "Europe",
-        dedicated: "2012, May, 21",
-        area: 44175,
+        templeName: "IMC - Internation Mathematical Olympiad",
+        location: "Bulgaria, Europe",
+        dedicated: "1994, June, 7",
+        area: 96630,
         imageUrl:
-            "https://emc.mnm.hr/wp-content/uploads/2023/10/cropped-header-1.png",
-          //  "https://sedu.es.gov.br/Media/sedu/_Profiles/c4d8c6e6/982b8e1d/OCMAT%20-%20TERCEIRA%20E%20ÚLTIMA%20FASE_banner.png?v=638899084755199810",
-        reference: '<a href=https://emc.mnm.hr target="_blank">EMC Math Cup</a>'
+            "https://chiuchang.org/imc/wp-content/uploads/sites/2/2024/02/2024-InIMC-1024x1017.x17381.jpeg",
+        //   "https://olimpiadascientificas.org/static/images/imc.jpg",
+        //  "https://chiuchang.org/imc/wp-content/uploads/sites/2/2025/05/cropped-IMC_flag_小圖-2.x17381.jpg",
+        //  "https://i.ytimg.com/vi/J4_ze95nBqw/hqdefault.jpg",
+        reference: '<a https://www.imc-math.org.uk target="_blank">IMC Math Olympiad</a>'
     },
     // Add more temple objects here...
 ];
