@@ -17,9 +17,10 @@ body {
 h1 {
     font-weight: bold;
     padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+  /*  border: 1px solid rgb(0 0 0 / 10%); */
     font-size: 2rem;
     text-align: center;
+    border: none;
 }
 
 h2 {
@@ -40,7 +41,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: 1px solid rgba(0, 0 , 0, 0.1);
+  /*  border: 1px solid rgba(0, 0 , 0, 0.1); */
+    border: none;
 }
 
 #course-title {
@@ -152,7 +154,8 @@ ul li {
   gap: 2rem;
   margin-bottom: 2rem;
   padding: 1rem;
-  border: 1px solid #ccc;
+/*  border: 1px solid #ccc; */
+  border: none;
   border-radius: 10px;
 }
 

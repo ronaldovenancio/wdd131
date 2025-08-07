@@ -146,6 +146,7 @@ asiaLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.location.includes("Asia")));
 });
 
+
 oldLink.addEventListener("click", () => {
     const filtered = temples.filter(temple => {
         // Extrair o ano do campo `dedicated` (ex: "1888, May, 21")
@@ -154,6 +155,8 @@ oldLink.addEventListener("click", () => {
     });
     createTempleCard(filtered);
 });
+
+
 
 newLink.addEventListener("click", () => {
     const filtered = temples.filter(temple => {
@@ -164,16 +167,19 @@ newLink.addEventListener("click", () => {
     createTempleCard(filtered);
 });
 
+/*
 largeLink.addEventListener("click", () => {
     const filtered = temples.filter(temple => temple.area > 90000);
     createTempleCard(filtered);
 });
+*/
 
+/*
 smallLink.addEventListener("click", () => {
     const filtered = temples.filter(temple => temple.area < 10000);
     createTempleCard(filtered);
 });
-
+*/
 
 
 function createTempleCard(filteredTemples) {

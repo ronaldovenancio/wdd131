@@ -166,6 +166,7 @@ section stdlf {
     border-bottom: 1px solid #777;
     margin-bottom: 1rem;
     text-align: center;
+    border:none;
 }
 
 body {

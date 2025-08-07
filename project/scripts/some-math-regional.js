@@ -181,16 +181,19 @@ newLink.addEventListener("click", () => {
     createTempleCard(filtered);
 });
 
+/*
 largeLink.addEventListener("click", () => {
     const filtered = temples.filter(temple => temple.area > 90000);
     createTempleCard(filtered);
 });
+*/
 
+/*
 smallLink.addEventListener("click", () => {
     const filtered = temples.filter(temple => temple.area < 10000);
     createTempleCard(filtered);
 });
-
+*/
 
 
 function createTempleCard(filteredTemples) {
